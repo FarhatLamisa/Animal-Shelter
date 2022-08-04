@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "AnimalDetails";
+}
+<html>
+<head>
+    <title>PetDetails</title>
+    <link rel="stylesheet" type="text/css" href="../Views/Animals/StyleSheet1.css">
+    <style>
+        .mydivstyle {
+            padding: 10px;
+            font-family: Arial;
+            height: 800px;
+            position: relative;
+            background-size: cover;
+            background-image: url("hand_in_hand.jpg");
+            opacity: 1;
+        }
+
+        .mydivstyle img {
+            height: 300px;
+            width: 300px;
+            padding-left: 50px;
+        }
+
+        .info {
+            padding-left: 300px;
+            border: 5px solid gray;
+            margin: 50px;
+            background-color: white;
+            font-size: 25px;
+        }
+
+       .mydivstyle button {
+            background-color: lightblue;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydivstyle">
+        <img src="~/css/Images/a happy doggo.jpg" />
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Vaccinated</th>
+                    <th>Neutered</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>Bruno</td>
+                <td>Golden Retriever</td>
+                <td>Yes</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <button type="button" onclick="location.href='@Url.Action("MedicalRecords","Animals")'">Medical Records</button>
+        <button type="button" onclick="location.href='@Url.Action("RescueInfo","Animals")'">Rescue Info</button>
+        <button type="button" onclick="location.href='@Url.Action("DailyRoutine","Animals")'">Daily Routine</button>
+    </div>
+</body>
+</html>

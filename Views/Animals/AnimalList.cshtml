@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "AnimalList";
+}
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../Views/Animals/StyleSheet1.css">
+</head>
+<body>
+    <button type="button" onclick="location.href='@Url.Action("Create","Animals")'">Add Animal</button>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Click for details</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td><img src="~/css/Images/a happy doggo.jpg" /></td>
+            <td>Bruno</td>
+            <td><button type="button" onclick="location.href='@Url.Action("AnimalDetails","Animals")'">Details</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="~/css/Images/black_cat.jpg" /></td>
+            <td>Oscar</td>
+            <td><button>Details</button></td>
+        </tr>
+    </table>
+</body>
+</html>

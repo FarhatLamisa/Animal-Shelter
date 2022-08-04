@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewData["Title"] = "MedicalRecords";
+}
+<html>
+<head>
+    <style>
+        .mydivstyle {
+            padding: 10px;
+            font-family: Arial;
+            height: 1000px;
+            position: relative;
+            background-size: cover;
+            background-image: url("kid_and_dogs.jpg");
+            opacity: 1;
+            overflow: hidden;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+            padding-top: 80px;
+            float: left
+        }
+
+        .info {
+            border: 5px solid gray;
+            margin-right: 800px;
+            background-color: white;
+            font-size: 25px;
+            float: left;
+        }
+
+        .content-table {
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 1em;
+            min-width: 700px;
+            border-radius: 5px 5px 0 0;
+            background-color: white;
+        }
+
+            .content-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .content-table th,
+            .content-table td {
+                padding: 12px 15px;
+            }
+
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .content-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+                .content-table tbody tr:last-of-type {
+                    border-bottom: 12px solid #009879;
+                }
+
+        .box {
+            background-color: black;
+            color: white;
+        }
+
+        .button {
+            position: fixed;
+            top: 0;
+            right: 100px;
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <img src="~/css/Images/a happy doggo.jpg"/>
+        <div class="info">
+            <p>Name:  Bruno</p>
+            <p>Breed: Golden Retriever</p>
+            <p>Age:   5 years</p>
+        </div>
+        <table class="content-table">
+            <thead>
+            <tr>
+            <th>Date</th>
+            <th>Condition</th>
+            <th>Check up done by vet ID</th>
+            </tr>
+            </thead>
+
+
+            <tr>
+                <td>05.02.2021</td>
+                <td>Eye Infection</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>05.02.2021</td>
+                <td>minor bruises</td>
+                <td>28</td>
+            </tr>
+        </table>
+    
+</body>
+</html>
+
